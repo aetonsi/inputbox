@@ -25,11 +25,35 @@ namespace inputbox {
                         lblCaption.Text = a[i + 1];
                         i++;
                     }
+                    if (a[i] == "--default-text" || a[i] == "-d") {
+                        string t = a[i + 1];
+                        string escapeReplacement = "\0";
+                        t = t.Replace("\\\\", escapeReplacement); // have to first escape the escape character
+                        string tBeforeNewlineReplacements = t;
+                        t = t.Replace("\\r", "\r");
+                        t = t.Replace("\\n", "\n");
+                        string tAfterNewlineReplacements = t;
+                        t = t.Replace(escapeReplacement, "\\"); // then unescape the escape character
+                        if (tBeforeNewlineReplacements != tAfterNewlineReplacements) { // check if there was a newline
+                            this.enableMultiline();
+                        }
+                        txtMain.Text = t;
+                        i++;
+                    }
                     if (a[i] == "--password" || a[i] == "-p") {
                         chkPasswordCharToggle.Checked = true;
                     }
+                    if (a[i] == "--multiline" || a[i] == "-m") {
+                        this.enableMultiline();
+                    }
                 }
             }
+        }
+
+        private void enableMultiline() {
+            txtMain.Multiline = true;
+            lblInfo.Visible = true;
+            this.MaximumSize = new Size(0, 0);
         }
 
         private void chkPasswordCharToggle_CheckedChanged(object sender, EventArgs e) {

@@ -19,6 +19,18 @@
     "--password --title tit --caption CCC": {
       "commandName": "Project",
       "commandLineArgs": "--password --title tit --caption CCC"
+    },
+    "--default-text \"default text :)\" --multiline": {
+      "commandName": "Project",
+      "commandLineArgs": "--default-text \"default text :)\" --multiline"
+    },
+    "--default-text \"default text :) with \\\\ escapes \\\\\"": {
+      "commandName": "Project",
+      "commandLineArgs": "--default-text \"default text :) with \\\\ escapes \\\\\""
+    },
+    "--default-text \"default text\\r\\nwith line break and \\\\escapes\\\\\\r\\nthis is a backslash-r: \\\\r\"": {
+      "commandName": "Project",
+      "commandLineArgs": "--default-text \"default text\\r\\nwith line break and \\\\escapes\\\\\\r\\nthis is a backslash-r: \\\\r\""
     }
   }
 }

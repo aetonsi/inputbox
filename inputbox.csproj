@@ -13,8 +13,8 @@
     <Title>inputbox</Title>
     <PackageIcon>icon.png</PackageIcon>
     <PackageProjectUrl>https://www.github.com/aetonsi/inputbox</PackageProjectUrl>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.0</FileVersion>
+    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <FileVersion>1.1.0</FileVersion>
     <PackageLicenseExpression>wtfpl</PackageLicenseExpression>
     <Copyright>https://www.github.com/aetonsi/inputbox/README.md#License</Copyright>
     <RepositoryUrl>https://www.github.com/aetonsi/inputbox</RepositoryUrl>

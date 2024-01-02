@@ -59,9 +59,8 @@
             // 
             txtMain.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtMain.Location = new Point(12, 43);
-            txtMain.Multiline = true;
             txtMain.Name = "txtMain";
-            txtMain.Size = new Size(435, 35);
+            txtMain.Size = new Size(435, 27);
             txtMain.TabIndex = 0;
             txtMain.TextChanged += txtMain_TextChanged;
             // 
@@ -83,6 +82,7 @@
             lblInfo.Size = new Size(205, 15);
             lblInfo.TabIndex = 999;
             lblInfo.Text = "NB: use CTRL+Enter to add a new line";
+            lblInfo.Visible = false;
             // 
             // chkPasswordCharToggle
             // 
@@ -108,6 +108,7 @@
             Controls.Add(txtMain);
             Controls.Add(btnCancel);
             Controls.Add(btnOK);
+            MaximumSize = new Size(480, 190);
             MinimumSize = new Size(480, 190);
             Name = "frmMain";
             Text = "inputbox";
