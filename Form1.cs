@@ -38,6 +38,7 @@ namespace inputbox {
             } else {
                 txtMain.PasswordChar = '\0';
             }
+            txtMain.Focus();
         }
 
         private void txtMain_TextChanged(object sender, EventArgs e) {
