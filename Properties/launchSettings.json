@@ -1,0 +1,24 @@
+{
+  "profiles": {
+    "--title \"TEST TITLE\"": {
+      "commandName": "Project",
+      "commandLineArgs": "--title \"TEST TITLE\""
+    },
+    "--caption \"CAPTION OK OK\"": {
+      "commandName": "Project",
+      "commandLineArgs": "--caption \"CAPTION OK OK\""
+    },
+    "--title tit --caption CCC": {
+      "commandName": "Project",
+      "commandLineArgs": "--title tit --caption CCC"
+    },
+    "--password": {
+      "commandName": "Project",
+      "commandLineArgs": "--password"
+    },
+    "--password --title tit --caption CCC": {
+      "commandName": "Project",
+      "commandLineArgs": "--password --title tit --caption CCC"
+    }
+  }
+}
